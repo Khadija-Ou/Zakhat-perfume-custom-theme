@@ -76,7 +76,7 @@
 
 /* base */
 body {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-body-family);
 }
 
 .page-width {
