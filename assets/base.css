@@ -3598,3 +3598,30 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* Custom: Hide Search, Cart, and Account icons in Header */
+.header__icons .header__search,
+.header__icons #cart-icon-bubble,
+.header__icons .header__icon--account {
+  display: none !important;
+}
+
+/* Custom: Align Logo and Menu to opposite sides */
+.header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+/* Ensure the icons container doesn't take up space since they are hidden */
+.header__icons {
+  display: none !important;
+}
+
+/* On mobile, push the logo to the right and menu to the left (or vice versa) */
+@media screen and (max-width: 989px) {
+  .header {
+    grid-template-columns: auto auto !important;
+    column-gap: 0 !important;
+  }
+}
